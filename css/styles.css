@@ -38,7 +38,40 @@
     background-color: var(--accent-bg-cl);
     letter-spacing: 0.03em;
 }
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 
+    outline: 2px solid red;
+}
+.header-container{
+display: flex;
+align-items: center;
+}
+.list{
+    display: flex;
+    padding: 0;
+    margin:0px 0px 0px 93px; 
+}
+.list-item{
+    display: inline-block;
+padding:50px;
+
+}
+.list-item:last-child{
+
+}
+.contact{
+    display: flex;
+    margin-left: auto;
+}
+.contact-link{
+    display:inline-block;
+    padding-right: 50px;
+}
 /*Header*/
 .logo-main {
     font-family: var(--secondary-font);
