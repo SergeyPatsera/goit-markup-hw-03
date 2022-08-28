@@ -58,8 +58,6 @@ p
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-
-    outline: 2px solid red;
 }
 .section {
     padding: 94px 0;
@@ -70,11 +68,14 @@ img {
     height: auto;
 }
 /*Header*/
-
+.header {
+    border-bottom: 1px solid #ECECEC;
+    
+}
 .header-container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
+    
 }
 .logo-main {
     font-family: var(--secondary-font);
@@ -176,6 +177,8 @@ img {
 .footer-list {
     list-style: none;
     padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .footer-address {
@@ -205,6 +208,9 @@ img {
 .footer-link:hover,
 .footer-link:focus {
     color: var(--link-hvr-cl);
+}
+.footer-list {
+    margin-top: 6px;
 }
 
 /*HERO*/
@@ -357,7 +363,14 @@ background-color: var(--light-bg-cl);
 
 /*Портфоліо*/
 .filter-list {
+    display: flex;
     list-style: none;
+    gap: 8px;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 50px;
+
 }
 
 .btn {
@@ -367,6 +380,9 @@ background-color: var(--light-bg-cl);
     font-size: 16px;
     line-height: calc(26/16);
     background-color: var(--btn-bg-cl);
+    padding: 5px 21px;
+    border-radius: 4px;
+    border: 1px solid rgba(238, 238, 238, 1);
 }
 
 .btn:hover,
@@ -376,7 +392,13 @@ background-color: var(--light-bg-cl);
 }
 
 .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
+    gap: 30px;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .portfolio-link {
     text-decoration: none;
@@ -387,11 +409,19 @@ background-color: var(--light-bg-cl);
     font-size: 18px;
     line-height: calc(36/18);
     letter-spacing: 0.06em;
+    color: var(--main-txt-cl);
  
 }
 
 .portfolio-text {
+    margin-top: 4px;
     font-size: 16px;
     line-height: calc(30/16);
     color: var(--secondary-txt-cl);
+}
+.portfolio-group {
+    padding: 20px 24px 19px 24px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
