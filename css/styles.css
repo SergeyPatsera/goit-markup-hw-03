@@ -31,6 +31,9 @@
     /*btn-hero*/
     --btn-border-clr: #2196F3;
     --btn-border-radius:4px;
+    /*team-group*/
+    --bg-team-cards: rgba(255, 255, 255, 1);
+    --border-team: 0px 0px 4px 4px;
 }
 
 .page {
@@ -58,8 +61,13 @@ p
 
     outline: 2px solid red;
 }
-.section{
+.section {
     padding: 94px 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 /*Header*/
 
@@ -149,7 +157,10 @@ p
 .footer {
     background-color: var(--dark-bg-cl);
 }
-
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
 .logo-footer {
     font-family: var(--secondary-font);
     font-weight: 700;
@@ -158,10 +169,13 @@ p
     letter-spacing: 0.03em;
     color: var(--light-logo-cl);
     text-decoration: none;
+    margin-bottom: 20px;
+    
 }
 
 .footer-list {
     list-style: none;
+    padding-left: 0;
 }
 
 .footer-address {
@@ -176,7 +190,10 @@ p
 .footer-address:focus {
     color: var(--link-hvr-cl);
 }
-
+.footer-section {
+    padding-top: 60px;
+    padding-bottom:60px ;
+}
 .footer-link {
     text-decoration: none;
     font-style: normal;
@@ -272,36 +289,70 @@ p
     color: var(--secondary-txt-cl);
 }
 /*Чим ми займаємось*/
+.works.section {
+    padding-top: 0;
+}
 .works-title{
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42/36);
+    text-align: center;
+}
+.works-list {
+    list-style: none;
+    display: flex;
+    margin-top: 50px;
+    padding-left: 0;
+    margin-bottom: 0;
+    gap: 30px;
 }
 
 /*Команда*/
+
 .team-list {
     list-style: none;
+    display: flex;
+    padding-left: 0;
+    gap: 30px;
 }
 .team-title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: calc(42/36);
-        }
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    text-align: center;
+    
+}
+
+.team-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 270px;
+}
     
 .team {
-        background-color: var(--light-bg-cl);
-        }
+background-color: var(--light-bg-cl);
+}
     
 .team-subtitle {
         font-weight: 500;
         font-size: 16px;
         line-height: calc(19/16);
+        margin-bottom: 10px;
         }
     
 .team-text {
         font-size: 16px;
         line-height: calc(19/16);
         color: var(--secondary-txt-cl);
+        }
+        .team-group {
+            display: flex;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            align-items: center;
+        flex-direction: column;
+        background-color: var(--bg-team-cards);
+        border-radius: var(--border-team);
         }
 
 /*Портфоліо*/
